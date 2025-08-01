@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>2025 청년부 몽골 단기 선교 VIVE </title>
+  <title>2025 청년부 몽골 단기 선교 VIVE 
+</title>
   <link rel="stylesheet" href="style4.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.12.1/simple-lightbox.min.css">
 
@@ -68,8 +69,8 @@
 </head>
 <body>
     <div class="top-title">
-    <h1>2025 몽골 청년부 단기선교 VIVE</h1>
-    <p>시편 118: 17 <br> 내가 죽지 않고 살아서 여호와꼐서 하시는 일을 선포하리로다</p>
+    <h1>✨♥️❣️💜2025 몽골 청년부 단기선교 VIVE💙💕💖✨</h1>
+    <p>시편 118: 17 <br> 내가 죽지 않고 살아서 <br> 여호와꼐서 하시는 일을 선포하리로다</p>
   </div>
   <div class="content">
   <div class="date-section">
@@ -174,6 +175,10 @@
     display: flex;
     gap: 10px;
   }
+  
+  .sl-overlay {
+    background: rgba(0, 0, 0, 1) !important; 
+  }
 
   .sl-controls-wrapper button {
     background: #000;
@@ -207,14 +212,6 @@
       const currentSrc = currentImg?.getAttribute('src');
 
       if (currentSrc) {
-        // 중앙 정렬을 위한 스타일 조정
-        const imgContainer = document.querySelector('.sl-wrapper');
-        if (imgContainer) {
-          imgContainer.style.alignItems = 'center'; // 수직 가운데 정렬
-          imgContainer.style.justifyContent = 'center'; // 수평 가운데 정렬
-        }
-
-        // 버튼 생성
         const wrapper = document.createElement('div');
         wrapper.className = 'sl-controls-wrapper';
 
@@ -233,25 +230,28 @@
         const downloadBtn = document.createElement('button');
         downloadBtn.innerText = '📥 다운로드';
         downloadBtn.onclick = () => {
-          fetch(currentSrc)
-            .then(res => res.blob())
-            .then(blob => {
-              const blobUrl = URL.createObjectURL(blob);
-              const a = document.createElement('a');
-              a.href = blobUrl;
-              a.download = currentSrc.split('/').pop();
-              document.body.appendChild(a);
-              a.click();
-              document.body.removeChild(a);
-              URL.revokeObjectURL(blobUrl);
-            })
-            .catch(() => alert('다운로드 실패'));
+          const a = document.createElement('a');
+          a.href = currentSrc;
+
+          const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+          if (isMobile) {
+            // 모바일은 새 창에 이미지 열기
+            a.target = "_blank";
+          } else {
+            // PC는 다운로드
+            a.download = currentSrc.split('/').pop();
+          }
+
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
         };
 
         wrapper.appendChild(closeBtn);
         wrapper.appendChild(prevBtn);
         wrapper.appendChild(nextBtn);
         wrapper.appendChild(downloadBtn);
+
         document.body.appendChild(wrapper);
       }
     }, 100);
@@ -262,6 +262,7 @@
     if (wrapper) wrapper.remove();
   });
 </script>
+
 
 
   <style>
