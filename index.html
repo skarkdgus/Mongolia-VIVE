@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>2025 청년부 몽골 단기 선교 VIVE </title>
   <link rel="stylesheet" href="style4.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.12.1/simple-lightbox.min.css">
+
   <style>
     * {
       box-sizing: border-box;
@@ -161,8 +163,7 @@
     </div>
   </div>
 </div>
-<!-- SimpleLightbox JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.12.1/simple-lightbox.min.js"></script>
+
 
 <style>
   .sl-controls-wrapper {
@@ -182,43 +183,53 @@
     font-size: 14px;
     cursor: pointer;
     border: none;
+  
   }
+
+  .sl-image img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;}
 </style>
+
+<!-- SimpleLightbox JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.12.1/simple-lightbox.min.js"></script>
 
 <script>
   const lightbox = new SimpleLightbox('.gallery a');
 
   lightbox.on('shown.simplelightbox', function () {
-    // 기존 버튼 제거는 가장 먼저, 즉시 수행
     const existingWrapper = document.querySelector('.sl-controls-wrapper');
     if (existingWrapper) existingWrapper.remove();
 
-    // 버튼 생성은 약간 지연 (DOM이 확실히 렌더링된 뒤 실행)
     setTimeout(() => {
       const currentImg = document.querySelector('.sl-image img');
       const currentSrc = currentImg?.getAttribute('src');
 
       if (currentSrc) {
-        // wrapper 생성
+        // 중앙 정렬을 위한 스타일 조정
+        const imgContainer = document.querySelector('.sl-wrapper');
+        if (imgContainer) {
+          imgContainer.style.alignItems = 'center'; // 수직 가운데 정렬
+          imgContainer.style.justifyContent = 'center'; // 수평 가운데 정렬
+        }
+
+        // 버튼 생성
         const wrapper = document.createElement('div');
         wrapper.className = 'sl-controls-wrapper';
 
-        // ❌ 닫기 버튼
         const closeBtn = document.createElement('button');
         closeBtn.innerText = '❌';
         closeBtn.onclick = () => lightbox.close();
 
-        // ⬅️ 이전 버튼
         const prevBtn = document.createElement('button');
         prevBtn.innerText = '⬅️';
         prevBtn.onclick = () => lightbox.prev();
 
-        // ➡️ 다음 버튼
         const nextBtn = document.createElement('button');
         nextBtn.innerText = '➡️';
         nextBtn.onclick = () => lightbox.next();
 
-        // 📥 다운로드 버튼
         const downloadBtn = document.createElement('button');
         downloadBtn.innerText = '📥 다운로드';
         downloadBtn.onclick = () => {
@@ -237,16 +248,13 @@
             .catch(() => alert('다운로드 실패'));
         };
 
-        // 버튼들을 wrapper에 추가
         wrapper.appendChild(closeBtn);
         wrapper.appendChild(prevBtn);
         wrapper.appendChild(nextBtn);
         wrapper.appendChild(downloadBtn);
-
-        // body에 wrapper 추가
         document.body.appendChild(wrapper);
       }
-    }, 100); // setTimeout은 유지해도 됨
+    }, 100);
   });
 
   lightbox.on('closed.simplelightbox', function () {
@@ -264,6 +272,6 @@
     object-fit: contain; /* 비율 유지하며 조정 */
   }
     </style>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.12.1/simple-lightbox.min.js"></script>
 </body>
 </html>

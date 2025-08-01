@@ -5,35 +5,18 @@
   padding: 0;
 }
 
+body {
+  font-family: sans-serif;
+  background-color: #f6f6f6;
+  padding: 10px;
+}
+
+/* 타이틀 영역 */
 .top-title {
   padding-top: 80px;
   padding-bottom: 40px;
   text-align: center;
-  background-color: #ffffff; /* 배경색 조정 가능 */
-}
-
-.content {
-  padding-top: 100px;
-}
-
-#modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-
-#modal img {
-  max-width: 90%;
-  max-height: 90%;
-  box-shadow: 0 0 20px white;
-  border-radius: 10px;
+  background-color: #ffffff;
 }
 
 .top-title h1 {
@@ -41,36 +24,31 @@
   font-weight: bold;
   margin: 0;
   color: #333333;
-      width: 100%;
-    max-width: 1280px;
-    padding: 0 40px;
-    margin: auto;
-    position: relative;
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 40px;
+  margin: auto;
+  position: relative;
 }
 
 .top-title p {
-        width: 100%;
-    max-width: 1280px;
-    padding: 0 40px;
-    margin: auto;
-    position: relative;
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 40px;
+  margin: auto;
+  position: relative;
   font-size: 1.2em;
   color: #666666;
   margin-top: 12px;
   margin-left: 12px;
 }
 
-body {
-  font-family: sans-serif;
-  background-color: #f6f6f6;
-  padding: 10px;
+/* 본문 영역 (사진 섹션 전체 감싸는 div) */
+.content {
+  padding-top: 100px; /* 상단 여백 확보 */
 }
 
-.container {
-  margin-top: 40px;
-  text-align: center;
-}
-
+/* 날짜 라벨 */
 .date-section {
   margin-bottom: 40px;
   text-align: left;
@@ -85,24 +63,12 @@ body {
   color: #333;
 }
 
+/* 갤러리 그리드 */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   gap: 8px;
-  justify-content: center; /* 웹에서도 중앙 정렬 느낌으로 */
-}
-
-.sl-download {
-  position: fixed !important;
-  top: 20px;
-  right: 30px;
-  background: #000;
-  color: #fff;
-  padding: 8px 12px;
-  border-radius: 6px;
-  z-index: 9999;
-  text-decoration: none;
-  font-size: 14px;
+  justify-content: center; /* 중앙 정렬 */
 }
 
 .gallery a {
@@ -127,6 +93,33 @@ body {
   display: block;
 }
 
+/* lightbox 확대 이미지 중앙 정렬 및 비율 유지 */
+.sl-image img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+/* Lightbox 커스텀 버튼들 위치 고정 */
+.sl-controls-wrapper {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  gap: 10px;
+}
+
+.sl-controls-wrapper button {
+  background: #000;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+}
+
 /* 모바일 대응 */
 @media (max-width: 600px) {
   .label {
@@ -137,5 +130,3 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
   }
 }
-
-/* Lightbox 외 스타일은 필요 시 확장 가능 */
