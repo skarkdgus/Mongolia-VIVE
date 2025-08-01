@@ -1,0 +1,87 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: sans-serif;
+  background-color: #f6f6f6;
+  padding: 10px;
+}
+
+.container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.date-section {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.label {
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 8px;
+  justify-content: center; /* 웹에서도 중앙 정렬 느낌으로 */
+}
+
+.sl-download {
+  position: fixed !important;
+  top: 20px;
+  right: 30px;
+  background: #000;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  z-index: 9999;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.gallery a {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery a:hover img {
+  transform: scale(1.05);
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* 모바일 대응 */
+@media (max-width: 600px) {
+  .label {
+    font-size: 18px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}
+
+/* Lightbox 외 스타일은 필요 시 확장 가능 */

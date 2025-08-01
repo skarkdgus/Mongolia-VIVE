@@ -1,0 +1,114 @@
+/* 기본 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #fff;
+    color: #111;
+  }
+  
+  /* 네비게이션 스타일 */
+  .navbar {
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0;
+  }
+  
+  .navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000;
+  }
+  
+  .nav-links a {
+    margin: 0 8px;
+    text-decoration: none;
+    color: #0050ff;
+    font-size: 14px;
+  }
+  
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .btn-outline {
+    padding: 6px 12px;
+    border: 1px solid #00bcd4;
+    background-color: #fff;
+    color: #00bcd4;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.2s;
+  }
+  
+  .btn-outline:hover {
+    background-color: #e0f7fa;
+  }
+  
+  .btn-solid {
+    padding: 6px 12px;
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-solid:hover {
+    background-color: #0097a7;
+  }
+  
+  .user-circle {
+    width: 30px;
+    height: 30px;
+    background-color: #b7986d;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    font-size: 13px;
+  }
+  
+  /* 메인 배너 */
+  .main-banner {
+    text-align: center;
+    padding: 100px 20px 80px;
+  }
+  
+  .main-banner h1 {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+  
+  .main-banner p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 40px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+  
