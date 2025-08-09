@@ -25,35 +25,53 @@
     }
 
     .label {
-      font-size: 20px;
+      text-align: center;
+      font-size: 24px;
       font-weight: bold;
       display: inline-block;
       margin-left: 5px;
       margin-bottom: 10px;
+      color: #333;
     }
 
+    .date-button {
+        width: 200px; /* 가로 크기 늘림 */
+        height: 45px;
+        background-color: #88C8FF;
+        color: white;
+        box-shadow: 0 4px 16px rgba(0,79,255,0.3);
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 20px;
+        border: none;
+        transition: 0.3s;
+        margin: 0 auto 10px auto; /* 버튼을 가운데 정렬 */
+        display: block;
+        text-align: center;
+        white-space: nowrap; /* 줄바꿈 방지 */
+    }
+    .date-button:focus {
+        outline: 0;
+    }
+    .date-button:hover {
+        background-color: rgba(0,79,255,0.9);
+        cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0,79,255,0.6);
+    }
+
+    /* 갤러리 스타일 */
     .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-      gap: 8px;
+        display: none; /* 처음엔 안 보이게 */
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
     }
-
-    .gallery a {
-      display: block;
-      width: 100%;
-      aspect-ratio: 1/1;
-      overflow: hidden;
-      border-radius: 10px;
-      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-      background-color: white;
-    }
-
     .gallery img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.3s;
+        width: 200px; /* 통일된 가로 크기 */
+        height: 150px; /* 통일된 세로 크기 */
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        object-fit: cover; /* 비율 유지하며 잘라내기 */
     }
 
     .gallery a:hover img {
@@ -69,75 +87,223 @@
 </head>
 <body>
     <div class="top-title">
-    <h1>✨♥️❣️💜2025 몽골 청년부 단기선교 VIVE💙💕💖✨</h1>
-    <p>시편 118: 17 <br> 내가 죽지 않고 살아서 <br> 여호와꼐서 하시는 일을 선포하리로다</p>
+      <h1 style = " text-align: center;" >✨♥️❣️💜2025 몽골 청년부 단기선교 VIVE💙💕💖✨</h1>
+      <p style = " text-align: center;" >시편 118: 17 <br> 내가 죽지 않고 살아서 <br> 여호와께서 하시는 일을 선포하리로다</p>
+    </div>
+
+  <div class="group-photo" style="text-align: center; margin: 5px 0; margin-bottom: 50px;">
+    <img src="img/group.jpg" alt="단체사진" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
   </div>
+
   <div class="content">
+
+    <div class="date-section">
+ <button class="date-button">선교 준비 & 세겹줄 </button>
+
+<div class="gallery">
+
+  <a href="img/album/ready/3/IMG_3289.JPG"><img src="img/album/ready/3/IMG_3289.JPG" alt="선교 준비 이미지"></a>
+  <a href="img/album/ready/3/IMG_3294.JPG"><img src="img/album/ready/3/IMG_3294.JPG" alt="선교 준비 이미지"></a>
+  <a href="img/album/ready/3/IMG_3495.JPG"><img src="img/album/ready/3/IMG_3495.JPG" alt="선교 준비 이미지"></a>
+  <a href="img/album/ready/3/IMG_4640.JPG"><img src="img/album/ready/3/IMG_4640.JPG" alt="선교 준비 이미지"></a>
+  <a href="img/album/ready/3/IMG_4669.JPG"><img src="img/album/ready/3/IMG_4669.JPG" alt="선교 준비 이미지"></a>
+  <a href="img/album/ready/3/IMG_4701.JPG"><img src="img/album/ready/3/IMG_4701.JPG" alt="선교 준비 이미지"></a>
+    <a href="img/album/ready/ch/KakaoTalk_20250801_111539284_15.jpg"><img src="img/album/ready/ch/KakaoTalk_20250801_111539284_15.jpg" alt="선교 준비 이미지"></a>
+
+    <a href="img/album/ready/ch/KakaoTalk_20250801_164053516_01.jpg"><img src="img/album/ready/ch/KakaoTalk_20250801_164053516_01.jpg" alt="선교 준비 이미지"></a>
+      <a href="img/album/ready/ch/KakaoTalk_20250801_111539284_13.jpg"><img src="img/album/ready/ch/KakaoTalk_20250801_111539284_13.jpg" alt="선교 준비 이미지"></a>
+
+  <a href="img/album/ready/ch/KakaoTalk_20250801_111539284_07.jpg"><img src="img/album/ready/ch/KakaoTalk_20250801_111539284_07.jpg" alt="선교 준비 이미지"></a>
+  <a href="img/album/ready/ch/KakaoTalk_20250801_111539284_08.jpg"><img src="img/album/ready/ch/KakaoTalk_20250801_111539284_08.jpg" alt="선교 준비 이미지"></a>
+  <a href="img/album/ready/ch/KakaoTalk_20250801_111539284_11.jpg"><img src="img/album/ready/ch/KakaoTalk_20250801_111539284_11.jpg" alt="선교 준비 이미지"></a>
+  <a href="img/album/ready/ch/KakaoTalk_20250801_152307355.jpg"><img src="img/album/ready/ch/KakaoTalk_20250801_152307355.jpg" alt="선교 준비 이미지"></a>
+  <a href="img/album/ready/ch/KakaoTalk_20250801_204818098_03.jpg"><img src="img/album/ready/ch/KakaoTalk_20250801_204818098_03.jpg" alt="선교 준비 이미지"></a>
+  <a href="img/album/ready/ch/KakaoTalk_20250804_151147012_11.jpg"><img src="img/album/ready/ch/KakaoTalk_20250804_151147012_11.jpg" alt="선교 준비 이미지"></a>
+  <a href="img/album/ready/ch/KakaoTalk_20250804_151147012_14.jpg"><img src="img/album/ready/ch/KakaoTalk_20250804_151147012_14.jpg" alt="선교 준비 이미지"></a>
+  <a href="img/album/ready/ch/브니엘실에서 짐 패킹.jpg"><img src="img/album/ready/ch/브니엘실에서 짐 패킹.jpg" alt="선교 준비 이미지"></a>
+</div>
+</div>
+
+    <div class="date-section">
+  <button class="date-button">7월 17일 (공항)</button>
+  <div class="gallery">
+    <a href="img/album/ready/air/KakaoTalk_20250801_152240528.jpg"><img src="img/album/ready/air/KakaoTalk_20250801_152240528.jpg" alt="7월18일 이미지"></a>
+    <a href="img/album/ready/air/KakaoTalk_20250801_204818098_04.jpg"><img src="img/album/ready/air/KakaoTalk_20250801_204818098_04.jpg" alt="7월18일 이미지"></a>
+    <a href="img/album/ready/air/KakaoTalk_20250804_131241256_08.jpg"><img src="img/album/ready/air/KakaoTalk_20250804_131241256_08.jpg" alt="7월18일 이미지"></a>
+        <a href="img/album/ready/air/KakaoTalk_20250726_142809135_07.jpg"><img src="img/album/ready/air/KakaoTalk_20250726_142809135_07.jpg" alt="7월18일 이미지"></a>
+
+
+
+  </div>
+</div>
+
   <div class="date-section">
-    <h1 class="label">7월 18일</h1>
+    <button class="date-button">7월 18일 </button>
+
     <div class="gallery">
-      <a href="img/album/0718/DSC00030.JPG"><img src="img/album/0718/DSC00030.JPG" alt="7월18일 이미지"></a>
-      <a href="img/album/0718/DSC00035.JPG"><img src="img/album/0718/DSC00035.JPG" alt="7월18일 이미지"></a>
-      <a href="img/album/0718/DSC00044.JPG"><img src="img/album/0718/DSC00044.JPG" alt="7월18일 이미지"></a>
-      <a href="img/album/0718/DSC00056.JPG"><img src="img/album/0718/DSC00056.JPG" alt="7월18일 이미지"></a>
-      <a href="img/album/0718/DSC09912.JPG"><img src="img/album/0718/DSC09912.JPG" alt="7월18일 이미지"></a>
-      <a href="img/album/0718/DSC09940.JPG"><img src="img/album/0718/DSC09940.JPG" alt="7월18일 이미지"></a>
-      <a href="img/album/0718/DSC09967.JPG"><img src="img/album/0718/DSC09967.JPG" alt="7월18일 이미지"></a>
-      <a href="img/album/0718/DSC09984.JPG"><img src="img/album/0718/DSC09984.JPG" alt="7월18일 이미지"></a>
-      <a href="img/album/0718/IMG_2176.jpg"><img src="img/album/0718/IMG_2176.jpg" alt="7월18일 이미지1"></a>
-      <a href="img/album/0718/IMG_2195.jpg"><img src="img/album/0718/IMG_2195.jpg" alt="7월18일 이미지"></a>
-      <a href="img/album/0718/IMG_2199.jpg"><img src="img/album/0718/IMG_2199.jpg" alt="7월18일 이미지"></a>
-      <a href="img/album/0718/IMG_2220.jpg"><img src="img/album/0718/IMG_2220.jpg" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/1 전도지 준비(선교교회)/DSC09207.JPG"><img src="img/album/0718 R/1 전도지 준비(선교교회)/DSC09207.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/1 전도지 준비(선교교회)/DSC09258.JPG"><img src="img/album/0718 R/1 전도지 준비(선교교회)/DSC09258.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/2 자기소개(선교교회)/DSC09303.JPG"><img src="img/album/0718 R/2 자기소개(선교교회)/DSC09303.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/2 자기소개(선교교회)/DSC09393.JPG"><img src="img/album/0718 R/2 자기소개(선교교회)/DSC09393.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/3 점심식사(선교교회, 김밥)/DSC09408.JPG"><img src="img/album/0718 R/3 점심식사(선교교회, 김밥)/DSC09408.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/3 점심식사(선교교회, 김밥)/DSC09412.JPG"><img src="img/album/0718 R/3 점심식사(선교교회, 김밥)/DSC09412.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/4 노방전도 전(사랑의길교회)/DSC09449.JPG"><img src="img/album/0718 R/4 노방전도 전(사랑의길교회)/DSC09449.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/4 노방전도 전(사랑의길교회)/DSC09457.JPG"><img src="img/album/0718 R/4 노방전도 전(사랑의길교회)/DSC09457.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/4 노방전도 전(사랑의길교회)/DSC09475.JPG"><img src="img/album/0718 R/4 노방전도 전(사랑의길교회)/DSC09475.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/4 노방전도 전(사랑의길교회)/DSC09485.JPG"><img src="img/album/0718 R/4 노방전도 전(사랑의길교회)/DSC09485.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/4 노방전도 전(사랑의길교회)/KakaoTalk_20250801_183341063_01.jpg"><img src="img/album/0718 R/4 노방전도 전(사랑의길교회)/KakaoTalk_20250801_183341063_01.jpg" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/4 노방전도 전(사랑의길교회)/KakaoTalk_20250802_113910479_07.jpg"><img src="img/album/0718 R/4 노방전도 전(사랑의길교회)/KakaoTalk_20250802_113910479_07.jpg" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/5 노방전도(사랑의길교회)/DSC09533.JPG"><img src="img/album/0718 R/5 노방전도(사랑의길교회)/DSC09533.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/5 노방전도(사랑의길교회)/KakaoTalk_20250726_142809135_08.jpg"><img src="img/album/0718 R/5 노방전도(사랑의길교회)/KakaoTalk_20250726_142809135_08.jpg" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/5 노방전도(사랑의길교회)/KakaoTalk_20250801_184244439_01.jpg"><img src="img/album/0718 R/5 노방전도(사랑의길교회)/KakaoTalk_20250801_184244439_01.jpg" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/5 노방전도(사랑의길교회)/KakaoTalk_20250801_221455162_02.jpg"><img src="img/album/0718 R/5 노방전도(사랑의길교회)/KakaoTalk_20250801_221455162_02.jpg" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/5 노방전도(사랑의길교회)/KakaoTalk_20250801_221455162_09.jpg"><img src="img/album/0718 R/5 노방전도(사랑의길교회)/KakaoTalk_20250801_221455162_09.jpg" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/6 청소년 집회(사랑의길교회)/DSC09560.JPG"><img src="img/album/0718 R/6 청소년 집회(사랑의길교회)/DSC09560.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/6 청소년 집회(사랑의길교회)/DSC09566.JPG"><img src="img/album/0718 R/6 청소년 집회(사랑의길교회)/DSC09566.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/6 청소년 집회(사랑의길교회)/DSC09610.JPG"><img src="img/album/0718 R/6 청소년 집회(사랑의길교회)/DSC09610.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/6 청소년 집회(사랑의길교회)/DSC09613.JPG"><img src="img/album/0718 R/6 청소년 집회(사랑의길교회)/DSC09613.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/6 청소년 집회(사랑의길교회)/DSC09719.JPG"><img src="img/album/0718 R/6 청소년 집회(사랑의길교회)/DSC09719.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/6 청소년 집회(사랑의길교회)/DSC09731.JPG"><img src="img/album/0718 R/6 청소년 집회(사랑의길교회)/DSC09731.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/6 청소년 집회(사랑의길교회)/DSC09738.JPG"><img src="img/album/0718 R/6 청소년 집회(사랑의길교회)/DSC09738.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/6 청소년 집회(사랑의길교회)/DSC09742.JPG"><img src="img/album/0718 R/6 청소년 집회(사랑의길교회)/DSC09742.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/6 청소년 집회(사랑의길교회)/KakaoTalk_20250801_111537165_20.jpg"><img src="img/album/0718 R/6 청소년 집회(사랑의길교회)/KakaoTalk_20250801_111537165_20.jpg" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/6 청소년 집회(사랑의길교회)/KakaoTalk_20250801_111537165_26.jpg"><img src="img/album/0718 R/6 청소년 집회(사랑의길교회)/KakaoTalk_20250801_111537165_26.jpg" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/6 청소년 집회(사랑의길교회)/KakaoTalk_20250801_111537165_29.jpg"><img src="img/album/0718 R/6 청소년 집회(사랑의길교회)/KakaoTalk_20250801_111537165_29.jpg" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/7 친구 초청 잔치(사랑의길교회)/DSC09760.JPG"><img src="img/album/0718 R/7 친구 초청 잔치(사랑의길교회)/DSC09760.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/7 친구 초청 잔치(사랑의길교회)/DSC09762.JPG"><img src="img/album/0718 R/7 친구 초청 잔치(사랑의길교회)/DSC09762.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/7 친구 초청 잔치(사랑의길교회)/DSC09772.JPG"><img src="img/album/0718 R/7 친구 초청 잔치(사랑의길교회)/DSC09772.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/7 친구 초청 잔치(사랑의길교회)/DSC09843.JPG"><img src="img/album/0718 R/7 친구 초청 잔치(사랑의길교회)/DSC09843.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/7 친구 초청 잔치(사랑의길교회)/DSC09874.JPG"><img src="img/album/0718 R/7 친구 초청 잔치(사랑의길교회)/DSC09874.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/7 친구 초청 잔치(사랑의길교회)/DSC09879.JPG"><img src="img/album/0718 R/7 친구 초청 잔치(사랑의길교회)/DSC09879.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/7 친구 초청 잔치(사랑의길교회)/DSC09934.JPG"><img src="img/album/0718 R/7 친구 초청 잔치(사랑의길교회)/DSC09934.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/7 친구 초청 잔치(사랑의길교회)/KakaoTalk_20250724_133252685_11.jpg"><img src="img/album/0718 R//7 친구 초청 잔치(사랑의길교회)/KakaoTalk_20250724_133252685_11.jpg" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/8 집회 후 나눔(사랑의길교회)/DSC09984.JPG"><img src="img/album/0718 R/8 집회 후 나눔(사랑의길교회)/DSC09984.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/8 집회 후 나눔(사랑의길교회)/KakaoTalk_20250801_111537165_15.jpg"><img src="img/album/0718 R/8 집회 후 나눔(사랑의길교회)/KakaoTalk_20250801_111537165_15.jpg" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/8 집회 후 나눔(사랑의길교회)/KakaoTalk_20250801_111537165_16.jpg"><img src="img/album/0718 R/8 집회 후 나눔(사랑의길교회)/KakaoTalk_20250801_111537165_16.jpg" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/8 집회 후 나눔(사랑의길교회)/KakaoTalk_20250801_153011918_03.jpg"><img src="img/album/0718 R/8 집회 후 나눔(사랑의길교회)/KakaoTalk_20250801_153011918_03.jpg" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/8 집회 후 나눔(사랑의길교회)/KakaoTalk_20250801_163042364_02.jpg"><img src="img/album/0718 R/8 집회 후 나눔(사랑의길교회)/KakaoTalk_20250801_163042364_02.jpg" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/8 집회 후 나눔(사랑의길교회)/KakaoTalk_20250802_113910479.jpg"><img src="img/album/0718 R/8 집회 후 나눔(사랑의길교회)/KakaoTalk_20250802_113910479.jpg" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/9 마당, 농구장(사랑의길교회)/DSC00009.JPG"><img src="img/album/0718 R/9 마당, 농구장(사랑의길교회)/DSC00009.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/9 마당, 농구장(사랑의길교회)/DSC00030.JPG"><img src="img/album/0718 R/9 마당, 농구장(사랑의길교회)/DSC00030.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/9 마당, 농구장(사랑의길교회)/DSC09967.JPG"><img src="img/album/0718 R/9 마당, 농구장(사랑의길교회)/DSC09967.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/11 식사 후 나눔(사랑의길교회)/DSC00056.JPG"><img src="img/album/0718 R/11 식사 후 나눔(사랑의길교회)/DSC00056.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/11 식사 후 나눔(사랑의길교회)/DSC00070.JPG"><img src="img/album/0718 R/11 식사 후 나눔(사랑의길교회)/DSC00070.JPG" alt="7월18일 이미지"></a>
+      <a href="img/album/0718 R/11 식사 후 나눔(사랑의길교회)/KakaoTalk_20250801_184244439_04.jpg"><img src="img/album/0718 R/11 식사 후 나눔(사랑의길교회)/KakaoTalk_20250801_184244439_04.jpg" alt="7월18일 이미지"></a>
+
     </div>
   </div>
 
   <div class="date-section">
-    <h1 class="label">7월 19일</h1>
+    <button class="date-button">7월 19일 </button>
     <div class="gallery">
-      <a href="img/album/0719/DSC00077.JPG"><img src="img/album/0719/DSC00077.JPG" alt="7월19일 이미지"></a>
-      <a href="img/album/0719/DSC00104.JPG"><img src="img/album/0719/DSC00104.JPG" alt="7월19일 이미지"></a>
-      <a href="img/album/0719/DSC00127.JPG"><img src="img/album/0719/DSC00127.JPG" alt="7월19일 이미지"></a>
-      <a href="img/album/0719/DSC00203.JPG"><img src="img/album/0719/DSC00203.JPG" alt="7월19일 이미지"></a>
-      <a href="img/album/0719/DSC00208.JPG"><img src="img/album/0719/DSC00208.JPG" alt="7월19일 이미지"></a>
-      <a href="img/album/0719/DSC00303.JPG"><img src="img/album/0719/DSC00303.JPG" alt="7월19일 이미지"></a>
-      <a href="img/album/0719/DSC00344.JPG"><img src="img/album/0719/DSC00344.JPG" alt="7월19일 이미지"></a>
-      <a href="img/album/0719/DSC00362.JPG"><img src="img/album/0719/DSC00362.JPG" alt="7월19일 이미지"></a>
-      <a href="img/album/0719/DSC00401.JPG"><img src="img/album/0719/DSC00401.JPG" alt="7월19일 이미지"></a>
-      <a href="img/album/0719/DSC00430.JPG"><img src="img/album/0719/DSC00430.JPG" alt="7월19일 이미지"></a>
-      <a href="img/album/0719/DSC00432.JPG"><img src="img/album/0719/DSC00432.JPG" alt="7월19일 이미지"></a>
-      <a href="img/album/0719/DSC00452.JPG"><img src="img/album/0719/DSC00452.JPG" alt="7월19일 이미지"></a>
-      <a href="img/album/0719/DSC00463.JPG"><img src="img/album/0719/DSC00463.JPG" alt="7월19일 이미지"></a>
-      <a href="img/album/0719/DSC00522.JPG"><img src="img/album/0719/DSC00522.JPG" alt="7월19일 이미지"></a>
-      <a href="img/album/0719/DSC00527.JPG"><img src="img/album/0719/DSC00527.JPG" alt="7월19일 이미지"></a>
-   
+      <a href="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/DSC00097.JPG"><img src="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/DSC00097.JPG" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/DSC00203.JPG"><img src="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/DSC00203.JPG" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/DSC00208.JPG"><img src="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/DSC00208.JPG" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/DSC00220.JPG"><img src="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/DSC00220.JPG" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/DSC00256.JPG"><img src="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/DSC00256.JPG" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/DSC00274.JPG"><img src="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/DSC00274.JPG" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/DSC00303.JPG"><img src="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/DSC00303.JPG" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/DSC00313.JPG"><img src="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/DSC00313.JPG" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/DSC00344.JPG"><img src="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/DSC00344.JPG" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/DSC00371.JPG"><img src="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/DSC00371.JPG" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/DSC00386.JPG"><img src="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/DSC00386.JPG" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/DSC00401.JPG"><img src="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/DSC00401.JPG" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/KakaoTalk_20250726_142822493_30.jpg"><img src="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/KakaoTalk_20250726_142822493_30.jpg" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/KakaoTalk_20250801_153011918_20.jpg"><img src="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/KakaoTalk_20250801_153011918_20.jpg" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/KakaoTalk_20250801_153011918_25.jpg"><img src="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/KakaoTalk_20250801_153011918_25.jpg" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/KakaoTalk_20250801_153011918_26.jpg"><img src="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/KakaoTalk_20250801_153011918_26.jpg" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/KakaoTalk_20250801_163042364_01.jpg"><img src="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/KakaoTalk_20250801_163042364_01.jpg" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/KakaoTalk_20250801_183341063.jpg"><img src="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/KakaoTalk_20250801_183341063.jpg" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/KakaoTalk_20250802_113910479_06.jpg"><img src="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/KakaoTalk_20250802_113910479_06.jpg" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/KakaoTalk_20250804_131241256_01.jpg"><img src="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/KakaoTalk_20250804_131241256_01.jpg" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/KakaoTalk_20250804_151729775.jpg"><img src="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/KakaoTalk_20250804_151729775.jpg" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/1 톰과 제리/DSC00430.JPG"><img src="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/1 톰과 제리/DSC00430.JPG" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/1 톰과 제리/DSC00463.JPG"><img src="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/1 톰과 제리/DSC00463.JPG" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/1 톰과 제리/DSC00522.JPG"><img src="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/1 톰과 제리/DSC00522.JPG" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/2 신문지 자르기/IMG_2220.jpeg"><img src="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/2 신문지 자르기/IMG_2220.jpeg" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/DSC00425.JPG"><img src="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/DSC00425.JPG" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/DSC00429.JPG"><img src="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/DSC00429.JPG" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/DSC00438.JPG"><img src="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/DSC00438.JPG" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/DSC00493.JPG"><img src="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/DSC00493.JPG" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/DSC00523.JPG"><img src="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/DSC00523.JPG" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/KakaoTalk_20250724_133300852_03.jpg"><img src="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/KakaoTalk_20250724_133300852_03.jpg" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/KakaoTalk_20250731_230319564_09.jpg"><img src="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/KakaoTalk_20250731_230319564_09.jpg" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/KakaoTalk_20250801_111537165_09.jpg"><img src="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/KakaoTalk_20250801_111537165_09.jpg" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/KakaoTalk_20250801_111537165_10.jpg"><img src="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/KakaoTalk_20250801_111537165_10.jpg" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/KakaoTalk_20250801_151453117_02.jpg"><img src="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/KakaoTalk_20250801_151453117_02.jpg" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/KakaoTalk_20250801_151453117_03.jpg"><img src="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/KakaoTalk_20250801_151453117_03.jpg" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/KakaoTalk_20250801_163042364_06.jpg"><img src="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/KakaoTalk_20250801_163042364_06.jpg" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/KakaoTalk_20250801_183341063_06.jpg"><img src="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/KakaoTalk_20250801_183341063_06.jpg" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/KakaoTalk_20250801_183341063_07.jpg"><img src="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/KakaoTalk_20250801_183341063_07.jpg" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/KakaoTalk_20250801_184244439_02.jpg"><img src="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/KakaoTalk_20250801_184244439_02.jpg" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/KakaoTalk_20250801_184244439_05.jpg"><img src="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/KakaoTalk_20250801_184244439_05.jpg" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/KakaoTalk_20250802_113910479_05.jpg"><img src="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/KakaoTalk_20250802_113910479_05.jpg" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/KakaoTalk_20250802_113910479_09.jpg"><img src="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/KakaoTalk_20250802_113910479_09.jpg" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/5 기타(이동 중 사진, 개인정비 사진)/KakaoTalk_20250801_151453117_01.jpg"><img src="img/album/0719 R/5 기타(이동 중 사진, 개인정비 사진)/KakaoTalk_20250801_151453117_01.jpg" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/5 기타(이동 중 사진, 개인정비 사진)/KakaoTalk_20250801_221455162_03.jpg"><img src="img/album/0719 R/5 기타(이동 중 사진, 개인정비 사진)/KakaoTalk_20250801_221455162_03.jpg" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/5 기타(이동 중 사진, 개인정비 사진)/KakaoTalk_20250804_120632259_02.jpg"><img src="img/album/0719 R/5 기타(이동 중 사진, 개인정비 사진)/KakaoTalk_20250804_120632259_02.jpg" alt="7월19일 이미지"></a>
+      <a href="img/album/0719 R/5 기타(이동 중 사진, 개인정비 사진)/KakaoTalk_20250804_120632259_10.jpg"><img src="img/album/0719 R/5 기타(이동 중 사진, 개인정비 사진)/KakaoTalk_20250804_120632259_10.jpg" alt="7월19일 이미지"></a>
     </div>
   </div>
 
   <div class="date-section">
-    <h1 class="label">7월 20일</h1>
+    <button class="date-button">7월 20일 </button>
     <div class="gallery">
-      <a href="img/album/0720/DSC00530.JPG"><img src="img/album/0720/DSC00530.JPG" alt="7월20일 이미지"></a>
-      <a href="img/album/0720/DSC00535.JPG"><img src="img/album/0720/DSC00535.JPG" alt="7월20일 이미지"></a>
-      <a href="img/album/0720/DSC00554.JPG"><img src="img/album/0720/DSC00554.JPG" alt="7월20일 이미지"></a>
-      <a href="img/album/0720/DSC00568.JPG"><img src="img/album/0720/DSC00568.JPG" alt="7월20일 이미지"></a>
-      <a href="img/album/0720/DSC00576.JPG"><img src="img/album/0720/DSC00576.JPG" alt="7월20일 이미지"></a>
-      <a href="img/album/0720/DSC00581.JPG"><img src="img/album/0720/DSC00581.JPG" alt="7월20일 이미지"></a>
-      <a href="img/album/0720/DSC00595.JPG"><img src="img/album/0720/DSC00595.JPG" alt="7월20일 이미지"></a>
-      <a href="img/album/0720/DSC00606.JPG"><img src="img/album/0720/DSC00606.JPG" alt="7월20일 이미지"></a>
-      <a href="img/album/0720/DSC00614.JPG"><img src="img/album/0720/DSC00614.JPG" alt="7월20일 이미지"></a>
-      <a href="img/album/0720/DSC00622.JPG"><img src="img/album/0720/DSC00622.JPG" alt="7월20일 이미지"></a>
-      <a href="img/album/0720/DSC00629.JPG"><img src="img/album/0720/DSC00629.JPG" alt="7월20일 이미지"></a>
-      <a href="img/album/0720/DSC00643.JPG"><img src="img/album/0720/DSC00643.JPG" alt="7월20일 이미지"></a>
-      <a href="img/album/0720/DSC00654.JPG"><img src="img/album/0720/DSC00654.JPG" alt="7월20일 이미지"></a>
-      <a href="img/album/0720/DSC00668.JPG"><img src="img/album/0720/DSC00668.JPG" alt="7월20일 이미지"></a>
-      <a href="img/album/0720/DSC00684.JPG"><img src="img/album/0720/DSC00684.JPG" alt="7월20일 이미지"></a>
-      <a href="img/album/0720/IMG_2254.jpg"><img src="img/album/0720/IMG_2254.jpg" alt="7월20일 이미지"></a>
-      <a href="img/album/0720/DSC00585.JPG"><img src="img/album/0720/DSC00585.JPG" alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/1 대예배(선교교회)/DSC00530.JPG "><img src="img/album/0720 R/1 대예배(선교교회)/DSC00530.JPG" alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/1 대예배(선교교회)/DSC00535.JPG "><img src="img/album/0720 R/1 대예배(선교교회)/DSC00535.JPG " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/1 대예배(선교교회)/IMG_2254.jpg "><img src="img/album/0720 R/1 대예배(선교교회)/IMG_2254.jpg " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/1 대예배(선교교회)/KakaoTalk_20250726_142828197_20.jpg "><img src="img/album/0720 R/1 대예배(선교교회)/KakaoTalk_20250726_142828197_20.jpg " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/1 대예배(선교교회)/KakaoTalk_20250731_212952272_05.jpg "><img src="img/album/0720 R/1 대예배(선교교회)/KakaoTalk_20250731_212952272_05.jpg " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/1 대예배(선교교회)/KakaoTalk_20250801_111537165_06.jpg "><img src="img/album/0720 R/1 대예배(선교교회)/KakaoTalk_20250801_111537165_06.jpg" alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/1 대예배(선교교회)/KakaoTalk_20250801_151453117_04.jpg "><img src="img/album/0720 R/1 대예배(선교교회)/KakaoTalk_20250801_151453117_04.jpg " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/2 점심식사(중식당)/KakaoTalk_20250801_111537165_05.jpg "><img src="img/album/0720 R/2 점심식사(중식당)/KakaoTalk_20250801_111537165_05.jpg " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/1 체육대회 시작 전/DSC00581.JPG "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/1 체육대회 시작 전/DSC00581.JPG " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/1 체육대회 시작 전/DSC00585.JPG "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/1 체육대회 시작 전/DSC00585.JPG " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/2 준비운동(줄 맞춰 앉아서 어쩌구, 노래 맞춰 춤추기)/DSC00568.JPG "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/2 준비운동(줄 맞춰 앉아서 어쩌구, 노래 맞춰 춤추기)/DSC00568.JPG " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/2 준비운동(줄 맞춰 앉아서 어쩌구, 노래 맞춰 춤추기)/DSC00576.JPG "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/2 준비운동(줄 맞춰 앉아서 어쩌구, 노래 맞춰 춤추기)/DSC00576.JPG " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/3 닉 허이르 고롭/DSC00614.JPG "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/3 닉 허이르 고롭/DSC00614.JPG " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/7 복음팔찌/DSC00654.JPG "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/7 복음팔찌/DSC00654.JPG " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00574.JPG "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00574.JPG " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00593.JPG "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00593.JPG" alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00613.JPG "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00613.JPG " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00642.JPG "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00642.JPG " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00645.JPG "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00645.JPG " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00659.JPG "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00659.JPG " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00660.JPG "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00660.JPG " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00668.JPG "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00668.JPG " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00673.JPG "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00673.JPG" alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00677.JPG"><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00677.JPG" alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00679.JPG "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00679.JPG " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00684.JPG "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00684.JPG " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/KakaoTalk_20250724_133300852_11.jpg "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/KakaoTalk_20250724_133300852_11.jpg " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/KakaoTalk_20250724_133300852_16.jpg "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/KakaoTalk_20250724_133300852_16.jpg " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/KakaoTalk_20250731_212952272_06.jpg "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/KakaoTalk_20250731_212952272_06.jpg " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/KakaoTalk_20250801_183341063_05.jpg "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/KakaoTalk_20250801_183341063_05.jpg" alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/KakaoTalk_20250801_184244439_06.jpg "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/KakaoTalk_20250801_184244439_06.jpg " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/KakaoTalk_20250801_184244439_08.jpg "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/KakaoTalk_20250801_184244439_08.jpg " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/KakaoTalk_20250801_221455162_04.jpg "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/KakaoTalk_20250801_221455162_04.jpg " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/KakaoTalk_20250801_221455162_05.jpg "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/KakaoTalk_20250801_221455162_05.jpg " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/KakaoTalk_20250801_221455162_08.jpg "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/KakaoTalk_20250801_221455162_08.jpg" alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/KakaoTalk_20250801_221455162_10.jpg "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/KakaoTalk_20250801_221455162_10.jpg " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/KakaoTalk_20250804_120632259_04.jpg "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/KakaoTalk_20250804_120632259_04.jpg " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/KakaoTalk_20250804_131241256_05.jpg "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/KakaoTalk_20250804_131241256_05.jpg " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/4 저녁식사(불고기, 김치찜)/KakaoTalk_20250726_143131828_06.jpg "><img src="img/album/0720 R/4 저녁식사(불고기, 김치찜)/KakaoTalk_20250726_143131828_06.jpg " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/4 저녁식사(불고기, 김치찜)/KakaoTalk_20250801_111537165_03.jpg "><img src="img/album/0720 R/4 저녁식사(불고기, 김치찜)/KakaoTalk_20250801_111537165_03.jpg " alt="7월20일 이미지"></a>
+      <a href="img/album/0720 R/5 기타/KakaoTalk_20250804_120632259_03.jpg "><img src="img/album/0720 R/5 기타/KakaoTalk_20250804_120632259_03.jpg " alt="7월20일 이미지"></a>
+
+
+
+
+
+
+
+
+
     </div>
   </div>
 
   <div class="date-section">
-    <h1 class="label">7월 21일</h1>
+    <button class="date-button">7월 21일 </button>
     <div class="gallery">
       <a href="img/album/0721/DSC00720.JPG"><img src="img/album/0721/DSC00720.JPG" alt="7월21일 이미지"></a>
       <a href="img/album/0721/DSC00750.JPG"><img src="img/album/0721/DSC00750.JPG" alt="7월21일 이미지"></a>
@@ -153,7 +319,7 @@
   </div>
 
   <div class="date-section">
-    <h1 class="label">7월 22일</h1>
+    <button class="date-button">7월 22일 </button>
     <div class="gallery">
       <a href="img/album/0722/IMG_2381.jpg"><img src="img/album/0722/IMG_2381.jpg" alt="7월22일 이미지"></a>
       <a href="img/album/0722/IMG_2390.jpg"><img src="img/album/0722/IMG_2390.jpg" alt="7월22일 이미지"></a>
@@ -163,6 +329,15 @@
 
     </div>
   </div>
+
+      <div class="date-section">
+  <button class="date-button">7월 27일(후속 모임) </button>
+
+  <div class="gallery">
+    <a href="img/album/0718/DSC00030.JPG"><img src="img/album/0718/DSC00030.JPG" alt="7월18일 이미지"></a>
+
+  </div>
+</div>
 </div>
 
 
@@ -261,6 +436,18 @@
     const wrapper = document.querySelector('.sl-controls-wrapper');
     if (wrapper) wrapper.remove();
   });
+
+
+    document.querySelectorAll(".date-button").forEach(button => {
+        button.addEventListener("click", () => {
+            const gallery = button.nextElementSibling;
+            if (gallery.style.display === "none" || gallery.style.display === "") {
+                gallery.style.display = "flex"; // 열기
+            } else {
+                gallery.style.display = "none"; // 닫기
+            }
+        });
+    });
 </script>
 
 
