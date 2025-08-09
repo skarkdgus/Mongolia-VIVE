@@ -132,8 +132,6 @@
     <a href="img/album/ready/air/KakaoTalk_20250804_131241256_08.jpg"><img src="img/album/ready/air/KakaoTalk_20250804_131241256_08.jpg" alt="7월18일 이미지"></a>
         <a href="img/album/ready/air/KakaoTalk_20250726_142809135_07.jpg"><img src="img/album/ready/air/KakaoTalk_20250726_142809135_07.jpg" alt="7월18일 이미지"></a>
 
-
-
   </div>
 </div>
 
@@ -224,7 +222,6 @@
     <button class="date-button">7월 19일 <실내 체육대회> </button>
     <div class="gallery">
       <a href="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/KakaoTalk_20250801_153011918_25.jpg"><img src="img/album/0719 R/2 야외 체육대회(소영팀, 초원)/KakaoTalk_20250801_153011918_25.jpg" alt="7월19일 이미지"></a>
-
       <a href="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/1 톰과 제리/DSC00430.JPG"><img src="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/1 톰과 제리/DSC00430.JPG" alt="7월19일 이미지"></a>
       <a href="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/1 톰과 제리/DSC00463.JPG"><img src="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/1 톰과 제리/DSC00463.JPG" alt="7월19일 이미지"></a>
       <a href="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/1 톰과 제리/DSC00522.JPG"><img src="img/album/0719 R/4 실내 체육대회(선미팀, 체육관)/1 톰과 제리/DSC00522.JPG" alt="7월19일 이미지"></a>
@@ -272,7 +269,6 @@
       <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00574.JPG "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00574.JPG " alt="7월20일 이미지"></a>
       <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00593.JPG "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00593.JPG" alt="7월20일 이미지"></a>
       <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/3 닉 허이르 고롭/DSC00614.JPG "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/3 닉 허이르 고롭/DSC00614.JPG " alt="7월20일 이미지"></a>
-     
       <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00613.JPG "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/DSC00613.JPG " alt="7월20일 이미지"></a>
       <a href="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/KakaoTalk_20250801_184244439_08.jpg "><img src="img/album/0720 R/3 실내 체육대회(민경팀, 체육관)/KakaoTalk_20250801_184244439_08.jpg " alt="7월20일 이미지"></a>
     </div>
@@ -325,11 +321,6 @@
       <a href="img/album/0721 r/13.jpg"><img src="img/album/0721 r/13.jpg" alt="7월21일 이미지"></a>
       <a href="img/album/0721 r/14.jpg"><img src="img/album/0721 r/14.jpg" alt="7월21일 이미지"></a>
       <a href="img/album/0721 r/15.jpg"><img src="img/album/0721 r/15.jpg" alt="7월21일 이미지"></a>
-
-
-      
-   
-
       
     </div>
   </div>
@@ -372,7 +363,7 @@
 </div>
 
 <footer class="video-footer">
-  <p style = " text-align: center;">아래는 저희가 만든 영상입니다. 유튜브를 통해 영상 시청이 가능합니다.</p>
+  <p style = " text-align: center;">아래는 저희가 만든 영상입니다. <br> 유튜브를 통해 영상 시청이 가능합니다.</p>
   <ul class="video-links">
     <li style = " text-align: center;"><a href="https://youtu.be/eCV9Kztaxdg" target="_blank" rel="noopener noreferrer"> 선교 준비 영상 </a></li>
     <li style = " text-align: center;"><a href="https://youtu.be/-rm_3cYEzQA" target="_blank" rel="noopener noreferrer"> 선교 인터뷰 영상</a></li>
@@ -477,16 +468,21 @@
   });
 
 
-    document.querySelectorAll(".date-button").forEach(button => {
-        button.addEventListener("click", () => {
-            const gallery = button.nextElementSibling;
-            if (gallery.style.display === "none" || gallery.style.display === "") {
-                gallery.style.display = "flex"; // 열기
-            } else {
-                gallery.style.display = "none"; // 닫기
-            }
-        });
-    });
+document.querySelectorAll(".date-button").forEach(button => {
+  button.addEventListener("click", () => {
+    const gallery = button.nextElementSibling;
+    if (gallery.style.display === "none" || gallery.style.display === "") {
+      gallery.style.display = "flex"; // 열기
+      
+      // 갤러리 열렸을 때 Lightbox 재초기화
+      new SimpleLightbox(gallery.querySelectorAll('a'));
+      
+    } else {
+      gallery.style.display = "none"; // 닫기
+    }
+  });
+});
+
 </script>
 
 
